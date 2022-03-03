@@ -1,4 +1,6 @@
-import { GET_PRODUCTS } from "../productsActions/productsActions"
+import { COUNT_CHANGE, 
+        GET_PRODUCTS, 
+        GET_FAVOURITE_PRODUCT } from "../productsActions/productsActions"
 
 const initialState = {
     products: [
@@ -9,7 +11,8 @@ const initialState = {
             "information":"ced coffee is a type of coffee beverage served chille brewed variously with the fundamental…",
             "beforeValue":"",
             "afterValue": 11.45,
-            "quantity": 0
+            "count": 0,
+            "isFavourite": false
         },
         {   
             "id": "2",
@@ -18,7 +21,8 @@ const initialState = {
             "information":"A mighty meaty double helping of all the reasons you love our burger.",
             "beforeValue":"",
             "afterValue": 10.55,
-            "quantity": 0
+            "count": 0,
+            "isFavourite": false
         },
         {   
             "id": 3,
@@ -27,7 +31,8 @@ const initialState = {
             "information":"Browse unique Coca-Cola products clothing, & accessories, or customize Coke bottles and gifts",
             "beforeValue":"",
             "afterValue": 17.25,
-            "quantity": 0
+            "count": 0,
+            "isFavourite": false
         },
         {   
             "id": "4",
@@ -36,7 +41,8 @@ const initialState = {
             "information":"A mighty meaty double helping of all the reasons you love our burger.",
             "beforeValue": 12.75,
             "afterValue": 8.65,
-            "quantity": 0
+            "count": 0,
+            "isFavourite": false
         },
         {  
             "id": "5",
@@ -45,7 +51,8 @@ const initialState = {
             "information":"Crispy bacon tasty ham pineapple onion and stretchy mozzarella finished",
             "beforeValue":"",
             "afterValue": 18.25,
-            "quantity": 0
+            "count": 0,
+            "isFavourite": false
         },
         {   
             "id": 6,
@@ -54,7 +61,8 @@ const initialState = {
             "information":"Quisque pretium turpis non tempus cursus. Nulla consequat mi nec pellentesque imperdiet mi quam congue…",
             "beforeValue": 11.45,
             "afterValue": 7.35,
-            "quantity": 0
+            "count": 0,
+            "isFavourite": false
         },
         {   
             "id": 7,
@@ -63,7 +71,8 @@ const initialState = {
             "information":"Iced coffee is a type of coffee beverage served chilled brewed variously with",
             "beforeValue": "",
             "afterValue": 10.75,
-            "quantity": 0
+            "count": 0,
+            "isFavourite": false
         },
         {   
             "id": 8,
@@ -72,17 +81,24 @@ const initialState = {
             "information":"Iced coffee is a type of coffee beverage served chilled brewed variously with the fundamental…",
             "beforeValue":"" ,
             "afterValue": 12.25,
-            "quantity": 0
+            "count": 0,
+            "isFavourite": false
         }
-    ]
+    ],
+    favouriteProducts: [],
+    productsForBuy: []
 }
 
-export const productsReduser = ( state = initialState, action ) => {
+export const productsReducer = ( state = initialState, action ) => {
+
     switch ( action.type ) {
 
         case GET_PRODUCTS:
             return { ... state, products: action.payload }
-
+        case COUNT_CHANGE: 
+            return { ...state, products:action.payload}
+        case GET_FAVOURITE_PRODUCT: 
+            return { ...state, favouriteProducts: action.payload }
         default:
             return state;
     }

@@ -1,0 +1,74 @@
+[
+    {   
+        "id": "1",
+        "image":"25-1-450x450.png",
+        "name": "Iced Tea Bottle",
+        "information":"ced coffee is a type of coffee beverage served chille brewed variously with the fundamental…",
+        "valueBefore":"",
+        "valueAfter": 11,
+        "quantity": 0
+    },
+    {   
+        "id": "2",
+        "image":"2-1-450x450.png",
+        "name": "Bacon Burger",
+        "information":"A mighty meaty double helping of all the reasons you love our burger.",
+        "valueBefore":"",
+        "valueAfter": 10,
+        "quantity": 0
+    },
+    {   
+        "id": 3,
+        "image":"11-1-450x450.png",
+        "name": "Chocolate Muffin",
+        "information":"Browse unique Coca-Cola products clothing, & accessories, or customize Coke bottles and gifts",
+        "valueBefore":"",
+        "valueAfter": 17,
+        "quantity": 0
+    },
+    {   
+        "id": "4",
+        "image":"3-1-450x450.png",
+        "name": "BBQ chicken breast",
+        "information":"A mighty meaty double helping of all the reasons you love our burger.",
+        "valueBefore": 12,
+        "valueAfter": 8,
+        "quantity": 0
+    },
+    {  
+        "id": "5",
+        "image":"1-1-450x450.png",
+        "name": "Apricot Chicken",
+        "information":"Crispy bacon tasty ham pineapple onion and stretchy mozzarella finished",
+        "valueBefore":"",
+        "valueAfter": 18,
+        "quantity": 0
+    },
+    {   
+        "id": 6,
+        "image":"17-1-450x450.png",
+        "name": "Grand Italiano",
+        "information":"Quisque pretium turpis non tempus cursus. Nulla consequat mi nec pellentesque imperdiet mi quam congue…",
+        "valueBefore": 11,
+        "valueAfter": 7,
+        "quantity": 0
+    },
+    {   
+        "id": 7,
+        "image":"5-1-450x450.png",
+        "name": "Blueberry Shake",
+        "information":"Iced coffee is a type of coffee beverage served chilled brewed variously with",
+        "valueBefore": "",
+        "valueAfter": 10,
+        "quantity": 0
+    },
+    {   
+        "id": 8,
+        "image":"27-1-450x450.png",
+        "name": "Kiwi Smoothie",
+        "information":"Iced coffee is a type of coffee beverage served chilled brewed variously with the fundamental…",
+        "valueBefore":"" ,
+        "valueAfter": 12,
+        "quantity": 0
+    }
+]

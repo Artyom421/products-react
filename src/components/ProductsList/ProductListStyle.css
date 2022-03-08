@@ -4,3 +4,10 @@
     justify-content: space-around;
     row-gap: 20px;
 }
+
+.productListBody { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}

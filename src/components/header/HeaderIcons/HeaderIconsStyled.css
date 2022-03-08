@@ -2,5 +2,41 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25%;
+    width: 30%;
+}
+
+.iconsDiv > input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid #282828;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px grey;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #282828;
+}
+
+.icons {
+    font-size: 25px;
+    color: silver;
+}
+
+.basketIcon, .heartIcon {
+    position: relative;
+}
+.basketCount, .heartCount {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    border: 1px solid #282828;
+    border-radius: 50%;
+    background-color: white;
 }

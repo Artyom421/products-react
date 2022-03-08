@@ -1,0 +1,42 @@
+.modal {
+    min-width: 600px;
+    height: 300px;
+}
+
+.modalHeaderDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableImage {
+    width: 80px;
+    height: 80px;
+}
+
+.modalDiv {
+     display: flex;
+     flex-direction: column;
+     row-gap: 15px;
+     align-items: flex-end;
+     flex-wrap: wrap;
+} 
+
+.modalDiv > table {
+    border: 1px solid #282828;
+}
+
+.modalDiv > table  td {
+    border: 1px solid #282828;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.modalDiv img {
+    width: 100px;
+    height: 100px;
+}
+
+
+

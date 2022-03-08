@@ -8,8 +8,10 @@ export const HeaderComponent = () => {
         return (
             <header>
                 <div className="container">
-                    <HeaderNavBar/>
-                    <HeaderIcons/>
+                    <div className="headerNav">
+                        <HeaderNavBar/>
+                        <HeaderIcons/>
+                    </div>
                 </div>
             </header>
         )

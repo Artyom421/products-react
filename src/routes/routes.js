@@ -1,7 +1,7 @@
 import { HomePage } from "../pages/HomePage";
-import { LoginPage } from "../pages/LoginPage/LoginPage";
-import { ProductPage } from "../pages/ProductPage/ProductPage";
-import { SignUpPage } from "../pages/SignUpPage/SignUpPage";
+import { SignInPage } from "../pages/SignInPage";
+import { ProductPage } from "../pages/ProductPage";
+import { SignUpPage } from "../pages/SignUpPage";
 
 export const routes = [
     {
@@ -15,9 +15,9 @@ export const routes = [
         page: () => <ProductPage/>
     },
     {
-        path: "/LoginPage",
+        path: "/SignInPage",
         exact: true ,
-        page: () => <LoginPage/>
+        page: () => <SignInPage/>
     },
     {
         path: "/SignUpPage",

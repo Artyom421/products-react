@@ -9,7 +9,6 @@ const customStyles = {
   content: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
     alignItems: 'center',
     borderRadius: "20px",
     border: "1px solid #282828",

@@ -39,8 +39,16 @@ export const ProductCard = ({ item }) => {
             dispatch(getProducts(products))
         } 
         else {
-            alert ( 'apranqi qanakutyuny yntrvats che')
+            alert ( 'Ապրանքի քանակությունը ընտրված չէ')
         }
+    }
+
+    const changeRating = (rating, id) => {
+        const prod = products.filter((item) => item.id === id)[0]
+        
+        prod.rating = rating
+
+        dispatch(getProducts(products))
     }
 
     return (
@@ -66,6 +74,11 @@ export const ProductCard = ({ item }) => {
                     {
                         item.beforeValue ? <span className="beforeValue">{item.beforeValue} $</span> : null
                     }
+                </div>
+                <div className="Stars">
+                    <p>Please rate the product in the range of 0-100 points</p>
+                    <input className="range" defaultValue={0} value={item.rating} type="range" onChange={(e) => changeRating(e.target.value, item.id)} />
+                    <span>{item.rating}</span>
                 </div>
                 <Counter item={item}/>
             </div>

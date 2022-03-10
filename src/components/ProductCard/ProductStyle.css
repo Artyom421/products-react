@@ -68,3 +68,13 @@
     text-decoration: line-through;
     font-weight: 500;
 }
+
+.Stars {
+    width: 100%;
+}
+
+input.range { 
+    width: 100%;
+    outline: none;
+    background: #04AA6D;
+}

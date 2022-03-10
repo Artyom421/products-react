@@ -10,7 +10,7 @@ export const HeaderNavBar = () => {
                 <li onClick={() => history.push("/")} key={'/'}>Home</li>
                 <li onClick={() => history.push("/ProductPage")} key={'ProductPage'}>Shop</li>
                 <li onClick={() => history.push("/SignUpPage")} key={'SignUpPage'}>Sign-Up</li>
-                <li onClick={() => history.push("/LoginPage")} key={'LoginPage'}>Sign-In</li>
+                <li onClick={() => history.push("/SignInPage")} key={'LoginPage'}>Sign-In</li>
             </ul>    
         </div>
     )
